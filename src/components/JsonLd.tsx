@@ -14,7 +14,7 @@ export function JsonLdWebApp() {
       operatingSystem: 'Web browser',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Convert local audio files (OPUS, OGG, M4A, WAV, AAC) to MP3 in the browser. No upload, no server processing.',
+        'Free audio converter in your browser. Turn OPUS, OGG, M4A, WAV, AAC, and WhatsApp voice notes into MP3 locally. No upload, no server processing.',
       browserRequirements: 'Requires JavaScript and WebAssembly',
     };
     let el = document.getElementById(SCRIPT_ID) as HTMLScriptElement | null;
