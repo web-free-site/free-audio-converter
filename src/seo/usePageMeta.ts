@@ -28,5 +28,9 @@ export function usePageMeta({
     ogTitle?.setAttribute('content', title);
     ogDesc?.setAttribute('content', description);
     ogUrl?.setAttribute('content', url);
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    twTitle?.setAttribute('content', title);
+    twDesc?.setAttribute('content', description);
   }, [title, description, path]);
 }
