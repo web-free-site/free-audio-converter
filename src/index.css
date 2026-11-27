@@ -162,3 +162,59 @@ code {
 .ad-smartlink { font-size: 0.8rem; color: #94a3b8; }
 .ad-smartlink a { color: #67e8f9; }
 .seo-prerender { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
+/* Build-injected homepage copy for crawlers and no-JS visitors; removed once the app mounts. */
+.home-static-prerender {
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+  padding: 1.5rem 1rem;
+  color: #cbd5e1;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.home-static-prerender__header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.home-static-prerender h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+.home-static-prerender__lead {
+  margin: 0;
+  color: #94a3b8;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+.home-static-prerender h2 {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.15rem;
+  color: #f1f5f9;
+}
+.home-static-prerender h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+.home-static-prerender a {
+  color: #67e8f9;
+}
+.home-static-prerender ol,
+.home-static-prerender p {
+  margin: 0.5rem 0;
+}
+.home-static-prerender dl div {
+  margin-bottom: 1rem;
+}
+.home-static-prerender dt {
+  font-weight: 600;
+  color: #f1f5f9;
+}
+.home-static-prerender__canonical {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}

@@ -3,6 +3,7 @@ import HomeSeoSection from '../components/HomeSeoSection';
 import { JsonLdFaq, JsonLdWebApp } from '../components/JsonLd';
 import { HOME_FAQ } from '../seo/homeFaq';
 import { usePageMeta } from '../seo/usePageMeta';
+import { HOME_LEAD } from '../seo/homeStaticMarkup';
 import { SITE_NAME, SITE_URL } from '../site';
 
 const HOME_TITLE = `${SITE_NAME} — Convert OPUS, M4A, WAV, AAC to MP3 Free`;
@@ -22,7 +23,7 @@ export default function HomePage() {
       <JsonLdFaq faqs={[...HOME_FAQ]} />
       <ConverterPage
         title={SITE_NAME}
-        lead="Pick a local audio file, choose MP3 (or WAV/AAC), and download. Processing uses FFmpeg in WebAssembly on your computer — nothing is uploaded."
+        lead={HOME_LEAD}
       />
       <HomeSeoSection />
       <section className="max-w-3xl mx-auto px-4 pb-12 text-left">
