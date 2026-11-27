@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import router from "./router";
 import './index.css';
+import { removeHomeStaticSeo } from './utils/removeHomeStaticSeo';
+
+removeHomeStaticSeo();
 
 const rootElement = document.getElementById("root")!;
 const root = ReactDOM.createRoot(rootElement);
